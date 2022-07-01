@@ -21,7 +21,7 @@ data "aws_iam_policy_document" "default" {
 
     principals {
       type        = "AWS"
-      identifiers = ["arn:aws:iam::${data.aws_caller_identity.current.account_id}:root"]
+      identifiers = ["arn:aws-cn:iam::${data.aws_caller_identity.current.account_id}:root"]
     }
 
     actions = [
